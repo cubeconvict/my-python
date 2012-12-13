@@ -1,3 +1,5 @@
+#Little script for taking in a csv file and adding spaces in order to line up all the commas
+
 from array import *
 
 myline = 'a,b,cd,efg,h'
