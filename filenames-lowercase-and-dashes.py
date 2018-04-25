@@ -1,3 +1,6 @@
+'simple script for removing spaces, replacing them with dashes, and making a filename all lowercase
+
+
 import glob, re, os
 
 
@@ -8,9 +11,4 @@ for filename in glob.glob('*.xlsx' ):
 	print(filename, ' -> ', new_name)
 	os.rename(filename, new_name)
 
-'''for filename in glob.glob('*.xlsx' ):
-	pattern = r'(.*)request-updates.xlsx'
-	replace = r'request-updates-\1.xlsx'
-	new_name = re.sub(pattern, replace, filename)
-	print(filename, ' -> ', new_name)
-	os.rename(filename, new_name)'''
+
